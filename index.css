@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.foot {
+    text-align: center;
+}
+
+#display {
+    height: 800px;
+    width: 1000px;
+    border: 1px black solid;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.display-Box {
+    text-align: center;
+}

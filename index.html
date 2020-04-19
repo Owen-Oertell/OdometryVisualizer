@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odometry Visualizer</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="lib/keybindings.js"></script>
+
+
+</head>
+
+<body>
+    <div class="displayBox">
+        <div id="display">
+            <svg width="44" height="30" id="robot">
+                <circle cx="20" cy="15" r="15" style="fill:grey"></circle>
+                <!-- left then right-->
+                <rect x="-4" y="0" width="10" height="30" style="fill:black;" />
+                <rect x="34" y="0"width="10" height="30" style="fill:black;" />
+            </svg>
+        </div>
+    </div>
+    <div class="information"></div>
+    <div class="foot">
+        <p>Developed by Owen Oertell. View the source <a
+                href="https://github.com/Owen-Oertell/OdometryVisualizer">here</a>.</p>
+        <p>Built with MathJax, D3, and keybindings.js.</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
