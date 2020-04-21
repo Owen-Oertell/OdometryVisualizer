@@ -8,30 +8,49 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="lib/keybindings.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 </head>
 
 <body>
+    <div class="hd">
+        <h1>Odometry Visualizer</h1>
+        <p>Drive then robot with 'a', 'w', and 'd'</p>
+    </div>
+
     <div class="displayBox">
         <div id="display">
-            <svg width="44" height="30" id="robot">
-                <circle cx="20" cy="15" r="15" style="fill:grey"></circle>
-                <!-- left then right-->
-                <rect x="-4" y="0" width="10" height="30" style="fill:black;" />
-                <rect x="34" y="0"width="10" height="30" style="fill:black;" />
+            <svg id='robot' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 273.1 224.5'>
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: gray;
+                        }
+
+                        .cls-1,
+                        .cls-2 {
+                            stroke: #000;
+                            stroke-miterlimit: 10;
+                        }
+                    </style>
+                </defs>
+                <ellipse class='cls-1' cx='135.82' cy='112.25' rx='88.52' ry='92.35' />
+                <rect class='cls-2' x='209.21' y='0.5' width='63.39' height='223.5' />
+                <rect class='cls-2' x='0.5' y='0.5' width='63.39' height='223.5' />
             </svg>
+
         </div>
     </div>
     <div class="information"></div>
     <div class="foot">
         <p>Developed by Owen Oertell. View the source <a
                 href="https://github.com/Owen-Oertell/OdometryVisualizer">here</a>.</p>
-        <p>Built with MathJax, D3, and keybindings.js.</p>
+        <p>Built with MathJax, snap.svg, jquery</p>
     </div>
-    <script src="index.js"></script>
+
 </body>
 
 </html>
