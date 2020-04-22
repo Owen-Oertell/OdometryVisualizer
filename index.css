@@ -30,3 +30,9 @@ html, body {
     height: 50px;
     width: 50px;
 }
+
+#calculationEquations, #information {
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+}
