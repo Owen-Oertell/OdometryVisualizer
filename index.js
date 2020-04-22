@@ -55,6 +55,7 @@ function displayOdom() {
     returnString+= " | P Y: " + py;
     
     returnString+= "<br>x': " + Math.round(OldVals.x + rCenter*(-Math.sin((OldVals.theta*3.14159)/180) + Math.sin((phi*3.14159)/180) * Math.cos((OldVals.theta*3.14159)/180) + Math.sin((OldVals.theta*3.14159)/180)*Math.cos((phi*3.14159)/180)));
+    returnString+= " | y': " + Math.round(OldVals.y + rCenter*(Math.cos((OldVals.theta*3.14159)/180) - Math.cos((phi*3.14159)/180) * Math.cos((OldVals.theta*3.14159)/180) + Math.sin((OldVals.theta*3.14159)/180)*Math.sin((phi*3.14159)/180)));
     returnString+= "<br> Actual x: " + position.x;
     returnString+= " | Actual y: " + position.y;
 
